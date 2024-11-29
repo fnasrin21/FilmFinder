@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>🎥 Film Finder 🎥</h1>
+    <form action="/recommend" method="POST">
+        <label for="mood">Current Mood:</label>
+        <select name="mood" id="mood">
+            <option value="">-- Select a Mood --</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="excited">Excited</option>
+            <option value="relaxed">Relaxed</option>
+            <option value="spooky">Spooky</option>
+            <option value="nostalgic">Nostalgic</option>
+            <option value="curious">Curious</option>
+        </select>
+
+        <label for="genre">Preferred Genre:</label>
+        <select name="genre" id="genre">
+            <option value="">-- Select a Genre --</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+        </select>
+
+        <label for="language">Preferred Language:</label>
+        <select name="language" id="language" required>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="ko">Korean</option>
+            <option value="zh">Chinese</option>
+            <option value="ja">Japanese</option>
+            <option value="hi">Hindi</option>
+        </select>
+
+        <label for="rating">Minimum Rating:</label>
+        <input type="text" id="rating" name="rating" placeholder="ex: 8.0" required>
+
+        <button type="submit">Get Film Recommendations</button>
+    </form>
+</body>
+</html>
+
+
